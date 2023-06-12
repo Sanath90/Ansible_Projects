@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+    - name: Delete apache server
+      apt:
+        name: apache2
+        state: absent
+
